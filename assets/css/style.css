@@ -14,6 +14,12 @@ header {
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
+     position: sticky;
+     top: 0;
+     background-image: url('https://static.fullstack-bootcamp.com/module-2/flipped-hero-image.jpg');
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: 80%;
     
 }
 
@@ -22,6 +28,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
    
 }
 
@@ -48,6 +55,7 @@ header nav ul li a {
 padding: 10px 15px;
 font-weight: lighter;
 font-size: 1.55vw;
+text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 footer {
     background: #fce138;
@@ -76,11 +84,12 @@ section {
 .hero {
     background-image: url('https://static.fullstack-bootcamp.com/module-2/flipped-hero-image.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-attachment: fixed;
 
 }
 .hero-cta {
@@ -95,6 +104,7 @@ section {
     color: #fce138;
     font-size: 55px;
     font-style: italic;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .hero-cta p {
     color: white;
@@ -103,9 +113,11 @@ section {
     background-color: #fce138;
     padding: 20px;
     color: #024e76;
-    border: solid 3px #024e76;
+    border: solid 3px rgba(2, 78, 118, .8);
     width: 40%;
     margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 15px;
 
 }
 h3 {
@@ -122,6 +134,7 @@ h3 {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 .hero-form label {
     margin: 0 5px;
@@ -132,6 +145,7 @@ h3 {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
 }
 
 
@@ -286,6 +300,7 @@ height: 400px;
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
 
 }
 .contact-form button {
@@ -296,6 +311,7 @@ height: 400px;
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
 }
 .text-left {
     text-align: left;
@@ -313,6 +329,7 @@ height: 400px;
     header{
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
     header h1 {
         width: 100%;
