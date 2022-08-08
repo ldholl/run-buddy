@@ -57,6 +57,13 @@ font-weight: lighter;
 font-size: 1.55vw;
 text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
 footer {
     background: #fce138;
     width: 100%;
@@ -120,6 +127,10 @@ section {
     border-radius: 15px;
 
 }
+
+.hero-form button:hover {
+    background-color: #39a6b2;
+}
 h3 {
     margin: 0;
 }
@@ -135,6 +146,12 @@ h3 {
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
 }
 .hero-form label {
     margin: 0 5px;
@@ -181,11 +198,14 @@ text-align: center;
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+.step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
+
 }
 .step h3 {
     color: #024e76;
@@ -301,8 +321,14 @@ height: 400px;
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 10px;
+    background-color: rgba(57, 166, 178, 0.5);
 
 }
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(57, 166, 178, 1);
+}
+
 .contact-form button {
     width: 100%;
     border: none;
@@ -312,6 +338,11 @@ height: 400px;
     padding: 15px 0;
     font-size: 16px;
     border-radius: 10px;
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
 }
 .text-left {
     text-align: left;
